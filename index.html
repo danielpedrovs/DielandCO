@@ -13,9 +13,6 @@
       font-family: 'Inter', sans-serif;
     }
   </style>
-
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
@@ -33,25 +30,22 @@
     </p>
   </section>
 
-  <!-- Image Carousel -->
+  <!-- Image Gallery (Arranged in Grid) -->
   <section class="max-w-5xl mx-auto mt-12 px-4">
     <h2 class="text-2xl font-semibold mb-6 text-center">Gallery</h2>
-    <div class="swiper mySwiper rounded shadow-md">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/IMG_2573.JPG" alt="Project 1" class="w-full h-80 object-cover rounded"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/IMG_2617.JPG" alt="Project 2" class="w-full h-80 object-cover rounded"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/IMG_2621.JPG" alt="Project 3" class="w-full h-80 object-cover rounded"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/IMG_3190.JPG" alt="Project 4" class="w-full h-80 object-cover rounded"/>
-        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div>
+        <img src="images/IMG_2573.JPG" alt="Project 1" class="w-full h-80 object-cover rounded shadow"/>
       </div>
-      <div class="swiper-pagination"></div>
+      <div>
+        <img src="images/IMG_2617.JPG" alt="Project 2" class="w-full h-80 object-cover rounded shadow"/>
+      </div>
+      <div>
+        <img src="images/IMG_2621.JPG" alt="Project 3" class="w-full h-80 object-cover rounded shadow"/>
+      </div>
+      <div>
+        <img src="images/IMG_3190.JPG" alt="Project 4" class="w-full h-80 object-cover rounded shadow"/>
+      </div>
     </div>
   </section>
 
@@ -87,20 +81,5 @@
     © 2025 Daniel’s Painting Services. All rights reserved.
   </footer>
 
-  <!-- Swiper Script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(\".mySwiper\", {
-      loop: true,
-      pagination: {
-        el: \".swiper-pagination\",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-    });
-  </script>
 </body>
 </html>
