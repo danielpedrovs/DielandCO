@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diel&CO - Painting Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS for Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4 text-center">
+    <h1 class="text-4xl font-bold">Diel&CO</h1>
+    <p class="text-lg text-gray-500 mt-2">Transforming your home with precision and care</p>
+  </header>
+
+  <!-- Welcome Message -->
+  <section class="bg-white py-10 mt-4 shadow-sm text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">Welcome!</h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+      At Diel&CO, we bring life back to your walls and ceilings. Whether you're looking to refresh a room or repair damage, we’re here to provide high-quality, detail-oriented painting and restoration work tailored to your space.
+    </p>
+  </section>
+
+  <!-- Image Carousel -->
+  <section class="max-w-5xl mx-auto mt-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Gallery</h2>
+    <div class="swiper mySwiper rounded shadow-md">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/images/IMG_3190.JPG" alt="Before and After" class="w-full h-80 object-cover rounded"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/IMG_2565.MOV" alt="Apartment Finish" class="w-full h-80 object-cover rounded"/>
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Services Offered -->
+  <section class="max-w-4xl mx-auto mt-16 px-4 text-center">
+    <h2 class="text-2xl font-semibold mb-4">Services Offered</h2>
+    <ul class="text-left inline-block space-y-2 text-lg">
+      <li>✔️ Interior Painting</li>
+      <li>✔️ Water Damage Repair</li>
+      <li>✔️ Crack Filling & Smoothing</li>
+      <li>✔️ Ceiling & Wall Restoration</li>
+    </ul>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-blue-600 text-white mt-16 py-10 px-4 text-center rounded-lg max-w-4xl mx-auto shadow-md">
+    <h2 class="text-3xl font-bold mb-4">Need a Professional Painter?</h2>
+    <p class="mb-6 text-lg">Let’s bring your space to life! Contact us now for a free consultation.</p>
+    <a href="mailto:danielpedrovs@gmail.com" class="bg-white text-blue-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
+      📧 Get in Touch
+    </a>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="max-w-4xl mx-auto mt-16 px-4 text-center">
+    <h2 class="text-2xl font-semibold mb-4">Contact Info</h2>
+    <p>Email: <a href="mailto:danielpedrovs@gmail.com" class="text-blue-600 hover:underline">danielpedrovs@gmail.com</a></p>
+    <p>Phone: <a href="tel:+447742906926" class="text-blue-600 hover:underline">+44 7742 906926</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-20 p-4 bg-white text-center text-sm text-gray-500">
+    © 2025 Daniel’s Painting Services. All rights reserved.
+  </footer>
+
+  <!-- SwiperJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
